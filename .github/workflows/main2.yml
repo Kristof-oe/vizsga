@@ -9,5 +9,5 @@ jobs:
     Docker:
         runs-on: ubuntu
         steps:
-            - run: actions/checkout@v4
+            - uses: actions/checkout@v4
             - run: docker built -t java/vizsga .
