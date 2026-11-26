@@ -1,0 +1,13 @@
+name: Vizsga
+
+on:
+    push: 
+        branches:
+            [main]
+
+jobs:
+    Docker:
+        runs-on: ubuntu
+        steps:
+            - uses: actions/checkout@v4
+            - run: docker built -t java/vizsga .
